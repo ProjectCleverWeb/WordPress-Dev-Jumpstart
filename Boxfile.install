@@ -1,0 +1,31 @@
+web1:
+  name: primary-lamp
+  type: php
+  version: 5.6
+  httpd_document_root: public
+  cron:
+    - "*/10 * * * *": "php public/wp-cron.php"
+
+database1:
+  type: mysql
+  name: primary-mysql
+
+storage1:
+  type: nfs
+  name: primary-storage
+
+global:
+  env:
+    - CONFIG_TYPE: production
+    - DB1_CHAR: 'utf8'
+    - DB1_COLL: 'utf8_general_ci'
+    - WP_MEMORY_LIMIT: '64M'
+    - DISABLE_WP_CRON: 'TRUE'
+    - AUTH_KEY: 'NtH3~-m|_2e6A0E3VMowM]2_;1S#QEw}N?.i_}e#M|4kNKaH^w|]{OsMR<L&.qJA'
+    - SECURE_AUTH_KEY: ';pg_+-%*u:5dqh6Dh@#|>hF_@;;i(gmldUd.;t%3yI1}A:r4j]g:9,;H`r@U6V(-'
+    - LOGGED_IN_KEY: '#|Y)WybA|!noB{8*BS-r #kl-*n%)U#*M/Cpx>N,4e`>fU<ORa?3dl`1{|_<d{6M'
+    - NONCE_KEY: 'C>5jn<LhRT}=byxb;ixr0[!o=|*p-y3B:v,FY`q,nXOs(l1Ziz7M>RzlN%-M$~:E'
+    - AUTH_SALT: 'w]x+a34 CJNx$1)[fnc>(eMwgKdXLWlq<-lGFwb).H;mK[t~/E)/kok-hKELp+#A'
+    - SECURE_AUTH_SALT: 'D]t:o-0Agzq1Q#,4(s~C3G Ju* |mz[.&FygF5*cyR{Sfq.<Z}4XA9;nmGY}(vC-'
+    - LOGGED_IN_SALT: ';![;,|k251)Z+mYdWorzC~M@RE3QONw!+SActlKS|8Y$&P 3||{uzBht${VOOi:v'
+    - NONCE_SALT: '~EWp|xW4&B9>L@(M-K2&?ZK^Iygv~,u~yYl8U-KMI#Wx;Y%?1>goa{Z03r`#uVm2'
