@@ -10,8 +10,8 @@ define('DB_NAME',          $_SERVER["DB1_NAME"]);
 define('DB_USER',          $_SERVER["DB1_USER"]);
 define('DB_PASSWORD',      $_SERVER["DB1_PASS"]);
 define('DB_HOST',          $_SERVER["DB1_HOST"]);
-define('DB_CHARSET',       $_SERVER["DB1_CHAR"]));
-define('DB_COLLATE',       $_SERVER["DB1_COLL"]));
+define('DB_CHARSET',       $_SERVER["DB1_CHAR"]);
+define('DB_COLLATE',       $_SERVER["DB1_COLL"]);
 
 // Environment Constants
 define('WP_MEMORY_LIMIT',  $_SERVER['WP_MEMORY_LIMIT'] );
