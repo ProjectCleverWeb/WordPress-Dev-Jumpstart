@@ -17,6 +17,7 @@ storage1:
 global:
   env:
     - CONFIG_TYPE: production
+    - WP_DB_PREFIX: wp_
     - DB1_CHAR: 'utf8'
     - DB1_COLL: 'utf8_general_ci'
     - WP_MEMORY_LIMIT: '64M'

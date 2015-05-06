@@ -29,7 +29,7 @@ define('SECURE_AUTH_SALT', $_SERVER['SECURE_AUTH_SALT']);
 define('LOGGED_IN_SALT',   $_SERVER['LOGGED_IN_SALT']);
 define('NONCE_SALT',       $_SERVER['NONCE_SALT']);
 
-$table_prefix  = $_SERVER['WP_PREFIX'];
+$table_prefix  = $_SERVER['WP_DB_PREFIX'];
 
 define('WPLANG', '');
 define('WP_DEBUG', false);
